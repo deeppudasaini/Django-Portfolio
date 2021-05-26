@@ -1,1 +1,1 @@
-echo "# Django-Portfolio"
+Django-Portfolio
