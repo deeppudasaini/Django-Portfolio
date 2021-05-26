@@ -49,39 +49,18 @@
                 <h3 class="text-secondary mb-0">Portfolio</h3>
                 <h2 class="mb-5">Recent Projects</h2>
             </div>
+            
             <div class="row no-gutters">
-                <div class="col-lg-6">
+            {% for project in project_name %}
+            <div class="col-lg-6">
                     <a class="portfolio-item" href="#">
                         <div class="caption">
                             <div class="caption-content">
-                                <h2>Java Swing Application</h2>
+                                <h2>{{ project.project_name }}</h2>
                             </div>
                         </div><img class="img-fluid" src="../static/assets/img/portfolio-1.jpg"></a>
                 </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>Php Course management system</h2>
-                            </div>
-                        </div><img class="img-fluid" src="../static/assets/img/portfolio-2.jpg"></a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>Tweak Mobile Application</h2>
-                            </div>
-                        </div><img class="img-fluid" src="../static/assets/img/portfolio-3.jpg"></a>
-                </div>
-                <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <h2>Java Games</h2>
-                            </div>
-                        </div><img class="img-fluid" src="../static/assets/img/portfolio-4.jpg"></a>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
